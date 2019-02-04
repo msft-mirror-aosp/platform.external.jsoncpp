@@ -34,7 +34,12 @@ cc_library {
     name: "libjsoncpp",
     defaults: ["libjsoncpp_defaults"],
     vendor_available: true,
+    vndk: {
+        enabled: true,
+        support_system_process: true,
+    },
     host_supported: true,
+    recovery_available: true,
 }
 
 cc_library_static {
