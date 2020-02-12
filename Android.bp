@@ -40,6 +40,11 @@ cc_library {
     },
     host_supported: true,
     recovery_available: true,
+    apex_available: [
+        "com.android.neuralnetworks",
+        "test_com.android.neuralnetworks",
+        "//apex_available:platform",
+    ],
     native_bridge_supported: true,
 }
 
