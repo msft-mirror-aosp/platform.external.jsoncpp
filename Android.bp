@@ -40,6 +40,10 @@ cc_library {
     },
     host_supported: true,
     recovery_available: true,
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
     native_bridge_supported: true,
 }
 
