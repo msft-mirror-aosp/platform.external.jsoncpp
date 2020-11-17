@@ -34,11 +34,14 @@ cc_library {
     name: "libjsoncpp",
     defaults: ["libjsoncpp_defaults"],
     vendor_available: true,
+    product_available: true,
     vndk: {
         enabled: true,
         support_system_process: true,
     },
     host_supported: true,
+    ramdisk_available: true,
+    vendor_ramdisk_available: true,
     recovery_available: true,
     apex_available: [
         "//apex_available:platform",
