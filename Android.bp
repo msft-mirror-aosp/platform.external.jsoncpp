@@ -47,6 +47,7 @@ cc_defaults {
 
     cflags: [
         "-DJSON_USE_EXCEPTION=0",
+        "-DJSONCPP_NO_LOCALE_SUPPORT",
         "-Wall",
         "-Werror",
         "-Wno-implicit-fallthrough",
