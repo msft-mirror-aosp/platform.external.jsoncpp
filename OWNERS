@@ -1,4 +1,9 @@
-include platform/system/core:/janitors/OWNERS
+# Emulator team
+jansene@google.com
+bohu@google.com
+lfy@google.com
+wangzfei@google.com
+# Original owners
 jophba@google.com
 djsollen@google.com
 scroggo@google.com
