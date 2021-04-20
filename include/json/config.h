@@ -74,7 +74,6 @@ extern JSON_API int msvc_pre1900_c99_snprintf(char* outBuf, size_t size,
 // C++11 should be used directly in JSONCPP.
 #define JSONCPP_OVERRIDE override
 
-#if 0  // Android change: b/170642246
 #ifdef __clang__
 #if __has_extension(attribute_deprecated_with_message)
 #define JSONCPP_DEPRECATED(message) __attribute__((deprecated(message)))
@@ -89,7 +88,6 @@ extern JSON_API int msvc_pre1900_c99_snprintf(char* outBuf, size_t size,
                         // MSVC)
 #define JSONCPP_DEPRECATED(message) __declspec(deprecated(message))
 #endif // __clang__ || __GNUC__ || _MSC_VER
-#endif  // Android change: b/170642246
 
 #if !defined(JSONCPP_DEPRECATED)
 #define JSONCPP_DEPRECATED(message)
