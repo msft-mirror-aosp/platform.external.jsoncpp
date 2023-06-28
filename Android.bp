@@ -55,6 +55,9 @@ cc_defaults {
     ],
 
     target: {
+        darwin: {
+            enabled: true,
+        },
         windows: {
             enabled: true,
         },
