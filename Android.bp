@@ -55,6 +55,9 @@ cc_defaults {
     ],
 
     target: {
+        darwin: {
+            enabled: true,
+        },
         windows: {
             enabled: true,
         },
@@ -66,10 +69,7 @@ cc_library {
     defaults: ["libjsoncpp_defaults"],
     vendor_available: true,
     product_available: true,
-    vndk: {
-        enabled: true,
-        support_system_process: true,
-    },
+    double_loadable: true,
     host_supported: true,
     ramdisk_available: true,
     vendor_ramdisk_available: true,
